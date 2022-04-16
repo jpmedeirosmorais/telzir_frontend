@@ -6,7 +6,7 @@ import {
   PlansContextProps,
   PlansProviderProps,
   BodyRequisition,
-  PlansFee
+  PlansFee,
 } from "./interfaces";
 
 const PlansContext = createContext({} as PlansContextProps);
@@ -19,7 +19,7 @@ const PlansProvider = ({ children }: PlansProviderProps) => {
       const response = await api.post("/calculate", body);
       setPlansFee(response.data);
     } catch (e) {
-      alert("Preencha todos campos!" + "\n" + e);
+      alert("Preencha todos campos!" + e);
     }
   }, []);
 
