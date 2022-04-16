@@ -1,17 +1,20 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
+import { AppProvider } from "hooks";
 
-import GlobalStyles from './common/styles/global';
-import Public from './routes/Public';
+import GlobalStyles from "./common/styles/global";
+import Public from "./routes/Public";
 
 function Bootstrap() {
   return (
-    <>
-      <BrowserRouter>
-        <Public />
-      </BrowserRouter>
+    <AppProvider>
+      <>
+        <BrowserRouter>
+          <Public />
+        </BrowserRouter>
 
-      <GlobalStyles />
-    </>
+        <GlobalStyles />
+      </>
+    </AppProvider>
   );
 }
 
