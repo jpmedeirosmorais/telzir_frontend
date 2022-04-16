@@ -1,17 +1,26 @@
+import { Colors } from "common/styles";
 import styled from "styled-components";
 
 export const Content = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 0.1rem solid #ccc;
-    width: 5rem;
-    padding: 0.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    :hover {
-        border: 0.1rem solid #000;
-        background-color: #fff;
-        cursor: pointer;
-    }
+  width: 10rem;
+  background-color: ${Colors.light.blue2};
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  color: ${Colors.dark.grey};
+  font-weight: bold;
+
+  :hover {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
 `;

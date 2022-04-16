@@ -1,3 +1,5 @@
+import React from "react";
+
 export const generateDestinyDDD = (origin: string) => {
   if (origin === "011" || origin === "11") {
     return ["---", "16", "17", "18"];
@@ -5,7 +7,7 @@ export const generateDestinyDDD = (origin: string) => {
     return ["---"];
   }
 
-  return ["---","11"];
+  return ["---", "11"];
 };
 
 export const propsDropdownOrigin = {
@@ -16,4 +18,18 @@ export const propsDropdownOrigin = {
 export const propsDropdownPlan = {
   labelText: "Plano",
   options: ["---", "FaleMais 30", "FaleMais 60", "FaleMais 120"],
+};
+
+export const verifyFields = (
+  origin: string,
+  destiny: string,
+  minutes: string,
+  callback: React.Dispatch<React.SetStateAction<boolean>>
+) => {
+  if (origin === "---" || destiny === "---" || minutes === "") {
+    callback(false);
+    return false;
+  }
+  callback(true);
+  return true;
 };

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Banner, Button, Dropdown, Input, Table } from "components";
 
@@ -8,6 +8,7 @@ import {
   generateDestinyDDD,
   propsDropdownOrigin,
   propsDropdownPlan,
+  verifyFields,
 } from "./utils";
 
 import * as S from "./styles";
@@ -18,19 +19,25 @@ export const Plans = () => {
   const [destiny, setDestiny] = useState<string>("");
   const [plan, setPlan] = useState<string>("");
   const [minutes, setMinutes] = useState<string>("");
+  const [showTable, setShowTable] = useState(false);
 
   const columnsTeste = {
     columns: [
       {
-        title: "Com plano",
+        title: `Com o plano ${plan}`,
         lines: [`${plansFee.withPlan}`],
       },
       {
-        title: "Sem plano",
+        title: `Sem o plano ${plan}`,
         lines: [`${plansFee.withoutPlan}`],
       },
     ],
   };
+
+  useEffect(() => {
+    setShowTable(false);
+    console.log("teste");
+  }, [origin, destiny, plan, minutes]);
 
   return (
     <S.Content>
@@ -48,20 +55,28 @@ export const Plans = () => {
           label="Minutos"
           callback={setMinutes}
         />
-        <Button
-          value="Calcular"
-          callback={() => {
-            getPlansFee({
-              plan: plan,
-              minutes: minutes,
-              originDDD: origin,
-              destinyDDD: destiny,
-            });
-          }}
-        />
       </S.FormFeeCalculator>
 
-      {plansFee.withoutPlan !== undefined && <Table {...columnsTeste} />}
+      <S.Calc>
+        {verifyFields(origin, destiny, minutes, () => {}) && (
+          <S.ButtonContainer>
+            <Button
+              value="Calcular"
+              callback={() => {
+                getPlansFee({
+                  plan: plan,
+                  minutes: minutes,
+                  originDDD: origin,
+                  destinyDDD: destiny,
+                });
+                verifyFields(origin, destiny, minutes, setShowTable);
+              }}
+            />
+          </S.ButtonContainer>
+        )}
+
+        {showTable && <Table {...columnsTeste} />}
+      </S.Calc>
     </S.Content>
   );
 };

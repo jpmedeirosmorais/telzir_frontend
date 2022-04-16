@@ -3,14 +3,12 @@ import * as S from "./styles";
 export const Banner = () => {
   return (
     <S.Content>
-      <S.Title>
-        Hello, <br />
-        I'm <strong>JP</strong>
-      </S.Title>
+      <S.Title>Telzir</S.Title>
       <S.Description>
-        I'm a <strong>Full Stack Developer</strong>
-        <br />
-        based in <strong>Natal-RN, Brazil</strong>
+        <S.Text>
+          Conheça agora nossos novos planos e veja como você pode aproveitar
+          todos os benefícios.
+        </S.Text>
       </S.Description>
     </S.Content>
   );
