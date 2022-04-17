@@ -29,12 +29,12 @@ export const verifyFields = (
 ) => {
   if (
     origin === "---" ||
-    destiny === "---" ||
-    plan === "---" ||
-    minutes === "" ||
     origin === "" ||
+    destiny === "---" ||
     destiny === "" ||
-    plan === ""
+    plan === "---" ||
+    plan === "" ||
+    minutes === ""
   ) {
     callback(false);
     return false;

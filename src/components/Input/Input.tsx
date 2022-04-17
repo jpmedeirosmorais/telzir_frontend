@@ -11,6 +11,7 @@ export const Input = ({ placeholder, label, callback }: InputProps) => {
         onChange={(e) => callback && callback(e.target.value)}
         type="number"
         required={true}
+        data-testid="input"
       />
     </S.Content>
   );

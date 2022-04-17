@@ -20,7 +20,7 @@ export const Content = styled.div`
     color: ${Colors.dark.grey};
     font-weight: bold;
   }
-
+ 
   select:focus {
     outline: none;
   }

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-import { Banner, Button, Dropdown, Input, Table } from "components";
+import { Banner, Button, Dropdown, Input, Table, Loading } from "components";
 
 import { usePlans } from "hooks";
 
@@ -20,6 +20,7 @@ export const Plans = () => {
   const [plan, setPlan] = useState<string>("");
   const [minutes, setMinutes] = useState<string>("");
   const [showTable, setShowTable] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const columnsTeste = {
     columns: [
@@ -33,6 +34,20 @@ export const Plans = () => {
       },
     ],
   };
+
+  const handleGetPlansFee = useCallback(
+    async (origin: string, destiny: string, plan: string, minutes: string) => {
+      setLoading(true);
+      await getPlansFee({
+        originDDD: origin,
+        destinyDDD: destiny,
+        plan: plan,
+        minutes: minutes,
+      });
+      setLoading(false);
+    },
+    [getPlansFee]
+  );
 
   useEffect(() => {
     setShowTable(false);
@@ -63,19 +78,14 @@ export const Plans = () => {
             <Button
               value="Calcular"
               callback={() => {
-                getPlansFee({
-                  plan: plan,
-                  minutes: minutes,
-                  originDDD: origin,
-                  destinyDDD: destiny,
-                });
+                handleGetPlansFee(origin, destiny, plan, minutes);
                 verifyFields(origin, destiny, minutes, plan, setShowTable);
               }}
             />
           </S.ButtonContainer>
         )}
 
-        {showTable && <Table {...columnsTeste} />}
+        {showTable && (loading ? <Loading /> : <Table {...columnsTeste} />)}
       </S.Calc>
     </S.Content>
   );
