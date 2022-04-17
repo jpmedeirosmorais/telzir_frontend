@@ -18,10 +18,22 @@ describe("Input", () => {
 
     render(<Input {...props} callback={handleFuction} />);
 
-    const input = screen.getByTestId("input");
-    fireEvent.change(input, { target: { value: "test" } });
+    const input: any = screen.getByTestId("input");
+    fireEvent.change(input, { target: { value: "123" } });
 
-    expect(screen.getByText("test")).toBe("test");
+    expect(input.value).toBe("123");
     expect(handleFuction).toHaveBeenCalled();
+  });
+
+  it("should not be able to change the value in input if it is disabled", () => {
+    const handleFuction = jest.fn();
+
+    render(<Input {...props} callback={handleFuction} />);
+
+    const input: any = screen.getByTestId("input");
+    fireEvent.change(input, { target: { value: "abc" } });
+
+    expect(input.value).toBe("");
+    expect(handleFuction).not.toHaveBeenCalled();
   });
 });

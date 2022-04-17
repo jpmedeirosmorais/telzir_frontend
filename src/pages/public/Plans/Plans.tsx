@@ -22,7 +22,7 @@ export const Plans = () => {
   const [showTable, setShowTable] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const columnsTeste = {
+  const columnsProps = {
     columns: [
       {
         title: `Com o plano ${plan}`,
@@ -85,7 +85,7 @@ export const Plans = () => {
           </S.ButtonContainer>
         )}
 
-        {showTable && (loading ? <Loading /> : <Table {...columnsTeste} />)}
+        {showTable && (loading ? <Loading /> : <Table {...columnsProps} />)}
       </S.Calc>
     </S.Content>
   );

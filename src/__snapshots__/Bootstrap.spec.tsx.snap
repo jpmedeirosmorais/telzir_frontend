@@ -1,0 +1,358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bootstrap renders 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-breuTD XPAWU"
+      >
+        <div
+          class="sc-bczRLJ bRbpkm"
+        >
+          <div
+            class="sc-gsnTZi fRUUuX"
+          >
+            Telzir
+            <svg>
+              call_black.svg
+            </svg>
+          </div>
+          <div
+            class="sc-dkzDqf fkkMXm"
+          >
+            <div
+              class="sc-hKMtZM jBCljQ"
+            >
+              Bem vindo a Telzir! Conheça agora nossos novos planos de chamada a longa distância. Veja como você pode aproveitar todos os benefícios. Temos os planos FaleMais 30, FaleMais 60 e FaleMais 120. Faça a simulação agora mesmo inserindo os dados abaixo e veja qual plano se encaixa melhor ao seu perfil.
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-ksZaOG enKqAL"
+        >
+          <div
+            class="sc-jSMfEi ghEnkB"
+          >
+            <div
+              class="sc-gKXOVf fRlWpq"
+            >
+              Origem
+            </div>
+            <select
+              data-testid="dropdown"
+            >
+              <option
+                data-testid="option----"
+                value="---"
+              >
+                ---
+              </option>
+              <option
+                data-testid="option-11"
+                value="11"
+              >
+                11
+              </option>
+              <option
+                data-testid="option-16"
+                value="16"
+              >
+                16
+              </option>
+              <option
+                data-testid="option-17"
+                value="17"
+              >
+                17
+              </option>
+              <option
+                data-testid="option-18"
+                value="18"
+              >
+                18
+              </option>
+            </select>
+          </div>
+          <div
+            class="sc-jSMfEi ghEnkB"
+          >
+            <div
+              class="sc-gKXOVf fRlWpq"
+            >
+              Destino
+            </div>
+            <select
+              data-testid="dropdown"
+            >
+              <option
+                data-testid="option----"
+                value="---"
+              >
+                ---
+              </option>
+            </select>
+          </div>
+          <div
+            class="sc-jSMfEi ghEnkB"
+          >
+            <div
+              class="sc-gKXOVf fRlWpq"
+            >
+              Plano
+            </div>
+            <select
+              data-testid="dropdown"
+            >
+              <option
+                data-testid="option----"
+                value="---"
+              >
+                ---
+              </option>
+              <option
+                data-testid="option-FaleMais 30"
+                value="FaleMais 30"
+              >
+                FaleMais 30
+              </option>
+              <option
+                data-testid="option-FaleMais 60"
+                value="FaleMais 60"
+              >
+                FaleMais 60
+              </option>
+              <option
+                data-testid="option-FaleMais 120"
+                value="FaleMais 120"
+              >
+                FaleMais 120
+              </option>
+            </select>
+          </div>
+          <div
+            class="sc-iBkjds gXsysd"
+          >
+            <label
+              class="sc-ftvSup MSbsy"
+            >
+              Minutos
+            </label>
+            <input
+              class="sc-papXJ gkoLbk"
+              data-testid="input"
+              placeholder="Digite os minutos"
+              required=""
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-fnykZs ezvPpY"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-breuTD XPAWU"
+    >
+      <div
+        class="sc-bczRLJ bRbpkm"
+      >
+        <div
+          class="sc-gsnTZi fRUUuX"
+        >
+          Telzir
+          <svg>
+            call_black.svg
+          </svg>
+        </div>
+        <div
+          class="sc-dkzDqf fkkMXm"
+        >
+          <div
+            class="sc-hKMtZM jBCljQ"
+          >
+            Bem vindo a Telzir! Conheça agora nossos novos planos de chamada a longa distância. Veja como você pode aproveitar todos os benefícios. Temos os planos FaleMais 30, FaleMais 60 e FaleMais 120. Faça a simulação agora mesmo inserindo os dados abaixo e veja qual plano se encaixa melhor ao seu perfil.
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-ksZaOG enKqAL"
+      >
+        <div
+          class="sc-jSMfEi ghEnkB"
+        >
+          <div
+            class="sc-gKXOVf fRlWpq"
+          >
+            Origem
+          </div>
+          <select
+            data-testid="dropdown"
+          >
+            <option
+              data-testid="option----"
+              value="---"
+            >
+              ---
+            </option>
+            <option
+              data-testid="option-11"
+              value="11"
+            >
+              11
+            </option>
+            <option
+              data-testid="option-16"
+              value="16"
+            >
+              16
+            </option>
+            <option
+              data-testid="option-17"
+              value="17"
+            >
+              17
+            </option>
+            <option
+              data-testid="option-18"
+              value="18"
+            >
+              18
+            </option>
+          </select>
+        </div>
+        <div
+          class="sc-jSMfEi ghEnkB"
+        >
+          <div
+            class="sc-gKXOVf fRlWpq"
+          >
+            Destino
+          </div>
+          <select
+            data-testid="dropdown"
+          >
+            <option
+              data-testid="option----"
+              value="---"
+            >
+              ---
+            </option>
+          </select>
+        </div>
+        <div
+          class="sc-jSMfEi ghEnkB"
+        >
+          <div
+            class="sc-gKXOVf fRlWpq"
+          >
+            Plano
+          </div>
+          <select
+            data-testid="dropdown"
+          >
+            <option
+              data-testid="option----"
+              value="---"
+            >
+              ---
+            </option>
+            <option
+              data-testid="option-FaleMais 30"
+              value="FaleMais 30"
+            >
+              FaleMais 30
+            </option>
+            <option
+              data-testid="option-FaleMais 60"
+              value="FaleMais 60"
+            >
+              FaleMais 60
+            </option>
+            <option
+              data-testid="option-FaleMais 120"
+              value="FaleMais 120"
+            >
+              FaleMais 120
+            </option>
+          </select>
+        </div>
+        <div
+          class="sc-iBkjds gXsysd"
+        >
+          <label
+            class="sc-ftvSup MSbsy"
+          >
+            Minutos
+          </label>
+          <input
+            class="sc-papXJ gkoLbk"
+            data-testid="input"
+            placeholder="Digite os minutos"
+            required=""
+            type="number"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-fnykZs ezvPpY"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

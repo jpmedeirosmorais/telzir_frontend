@@ -4,6 +4,6 @@ import { Banner } from "./Banner";
 
 describe("Banner", () => {
   it("renders", () => {
-    expect(render(<Banner />)).toBeTruthy();
+    expect(render(<Banner />)).toMatchSnapshot();
   });
 });

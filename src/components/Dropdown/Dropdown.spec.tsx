@@ -21,15 +21,14 @@ describe("Dropdown", () => {
     expect(screen.getByText("Option 1")).toBeTruthy();
   });
 
-  it("should render with callback", () => {
+  it("should change value", () => {
     const callback = jest.fn();
     render(<Dropdown {...dropdownProps} callback={callback} />);
+
     const dropdown = screen.getByTestId("dropdown");
-    expect(fireEvent.click(dropdown)).toBeTruthy();
-    const option1 = screen.getByTestId("option-Option 1");
-    expect(fireEvent.click(option1)).toBeTruthy();
-    expect(fireEvent.click(dropdown)).toBeTruthy();
-    const option2 = screen.getByTestId("option-Option 2");
-    expect(fireEvent.click(option2)).toBeTruthy();
+
+    fireEvent.change(dropdown, { target: { value: "Option 2" } });
+
+    expect(callback).toHaveBeenCalledWith("Option 2");
   });
 });
