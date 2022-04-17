@@ -1,5 +1,7 @@
 # TELZIR-FRONTEND CHALENGE
 
+URL: https://splendid-dodol-720190.netlify.app/
+
 ### `npm run start` or `yarn start`
 
 Runs the app in (http://localhost:3000);
