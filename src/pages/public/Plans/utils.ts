@@ -26,7 +26,13 @@ export const verifyFields = (
   minutes: string,
   callback: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
-  if (origin === "---" || destiny === "---" || minutes === "") {
+  if (
+    origin === "---" ||
+    destiny === "---" ||
+    minutes === "" ||
+    origin === "" ||
+    destiny === ""
+  ) {
     callback(false);
     return false;
   }

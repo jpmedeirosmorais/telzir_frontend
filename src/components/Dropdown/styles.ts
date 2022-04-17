@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Colors } from "common/styles";
 
 export const Content = styled.div`
-
+  margin: 1rem;
   select {
     transition: all 0.3s ease;
     appearance: none;
@@ -11,7 +11,7 @@ export const Content = styled.div`
 
     border: none;
     padding: 1rem 0.5rem;
-    background-color: ${Colors.light.blue2};
+    background-color: ${Colors.light.blue};
     min-width: 9.5rem;
     border-radius: 0.3rem;
 
@@ -41,6 +41,7 @@ export const Label = styled.div`
   width: 9.5rem;
   font-size: 1.8rem;
   font-weight: bold;
-  color: ${Colors.normal.yellow}; ;
-  text-align: center;
+  color: ${Colors.light.yellow};
+  text-align: left;
+  margin: 0 0 0.5rem 0.1rem;
 `;

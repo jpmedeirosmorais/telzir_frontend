@@ -9,7 +9,7 @@ export const Content = styled.div`
   text-align: center;
 
   width: 10rem;
-  background-color: ${Colors.light.blue2};
+  background-color: ${Colors.light.blue};
   border-radius: 0.3rem;
   padding: 1rem;
 
@@ -19,8 +19,8 @@ export const Content = styled.div`
 
   :hover {
     transition: all 0.3s ease;
-    background-color: #fff;
-    color: #000;
+    background-color: ${Colors.normal.white};
+    color: ${Colors.normal.black};
     cursor: pointer;
   }
 `;
