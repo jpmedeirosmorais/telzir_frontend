@@ -6,8 +6,11 @@ export const Banner = () => {
       <S.Title>Telzir</S.Title>
       <S.Description>
         <S.Text>
-          Conheça agora nossos novos planos e veja como você pode aproveitar
+          Bem vindo a Telzir!
+          Conheça agora nossos novos planos de chamada a longa distância. Veja como você pode aproveitar
           todos os benefícios.
+          Temos os planos FaleMais 30, FaleMais 60 e FaleMais 120.
+          Faça a simulação agora mesmo inserindo os dados abaixo e veja qual plano se encaixa melhor ao seu perfil.
         </S.Text>
       </S.Description>
     </S.Content>

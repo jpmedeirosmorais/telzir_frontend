@@ -5,7 +5,7 @@ export const Content = styled.div`
   max-width: 12.5rem;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
 `;
 
 export const Label = styled.label`

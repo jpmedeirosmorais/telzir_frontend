@@ -22,10 +22,9 @@ export const Title = styled.div`
 export const Description = styled.div`
   color: ${Colors.light.yellow};
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   flex-wrap: nowrap;
-  width: 80vw;
 `;
 
 export const Text = styled.div`

@@ -58,7 +58,7 @@ export const Plans = () => {
       </S.FormFeeCalculator>
 
       <S.Calc>
-        {verifyFields(origin, destiny, minutes, () => {}) && (
+        {verifyFields(origin, destiny, minutes, plan, () => {}) && (
           <S.ButtonContainer>
             <Button
               value="Calcular"
@@ -69,7 +69,7 @@ export const Plans = () => {
                   originDDD: origin,
                   destinyDDD: destiny,
                 });
-                verifyFields(origin, destiny, minutes, setShowTable);
+                verifyFields(origin, destiny, minutes, plan, setShowTable);
               }}
             />
           </S.ButtonContainer>

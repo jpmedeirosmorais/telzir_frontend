@@ -24,14 +24,17 @@ export const verifyFields = (
   origin: string,
   destiny: string,
   minutes: string,
+  plan: string,
   callback: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   if (
     origin === "---" ||
     destiny === "---" ||
+    plan === "---" ||
     minutes === "" ||
     origin === "" ||
-    destiny === ""
+    destiny === "" ||
+    plan === ""
   ) {
     callback(false);
     return false;
